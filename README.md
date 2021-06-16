@@ -12,7 +12,12 @@ context for us).
 `lib/with_syntax` is the baseline implementation using the out-of-the-box Elixir
 [with syntax](https://elixir-lang.org/getting-started/mix-otp/docs-tests-and-with.html#with)
 
-`lib/algaes_maybe_monad.ex` implements the pole dancer example with a Maybe monad from
+`lib/algaes_maybe_monad.ex` implements the pole dancer example with the Maybe monad from
+[witchcraft](https://hexdocs.pm/witchcraft/readme.html) +
+[algea](https://hexdocs.pm/algea/readme.html)
+libraries.
+
+`lib/algaes_either_monad.ex` implements the pole dancer example with the Either monad from
 [witchcraft](https://hexdocs.pm/witchcraft/readme.html) +
 [algea](https://hexdocs.pm/algea/readme.html)
 libraries.
