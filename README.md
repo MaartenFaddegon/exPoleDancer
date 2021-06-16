@@ -1,7 +1,34 @@
 # ExPoleDancer
 
-This repository is a collection of different Elixir implementations of the
-pole dancer example from the [Learn You A Haskell](http://learnyouahaskell.com/) book.
+This repository is a collection of implementations of the pole dancer example
+from the [Learn You A Haskell](http://learnyouahaskell.com/) book.  Each
+example implements a different pattern of dealing with values in an context.
+Comparing the example implementations allows us to see which patterns are most
+suited for focussing on the values (letting the pattern/library handling the
+context for us).
+
+## List of Patterns Implemented
+
+`lib/with_syntax` is the baseline implementation using the out-of-the-box Elixir
+[with syntax]
+(https://elixir-lang.org/getting-started/mix-otp/docs-tests-and-with.html#with)
+
+`lib/algaes_maybe_monad.ex` implements the pole dancer example with a Maybe monad from
+[witchcraft]
+(https://hexdocs.pm/witchcraft/readme.html) +
+[algea]
+(https://hexdocs.pm/algea/readme.html)
+libraries.
+
+`lib/exceptionals_error_monad.ex` implements the pole dancer example with the Error monad inspired
+[exceptional]
+(https://hexdocs.pm/exceptional/readme.html)
+library.
+
+## Example Description
+
+The following text describes the example that is implemented by the modules in
+`lib/`.
 
 > Pierre has decided to take a break from his job at the fish farm and try
 > tightrope walking. He's not that bad at it, but he does have one problem:
@@ -27,4 +54,4 @@ pole dancer example from the [Learn You A Haskell](http://learnyouahaskell.com/)
 > 
 > We can represent the pole with a simple pair of integers. The first component
 > will signify the number of birds on the left side and the second component
-> the number of birds on the right side:
+> the number of birds on the right side.
