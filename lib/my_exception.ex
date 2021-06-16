@@ -1,6 +1,7 @@
 defmodule MyException do
   # used in the ExceptionalsErrorMonad example
   defexception [:reason]
+
   @type t() :: %__MODULE__{
           reason: atom | nil
         }
