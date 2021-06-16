@@ -1,21 +1,30 @@
 # ExPoleDancer
 
-**TODO: Add description**
+This repository is a collection of different Elixir implementations of the
+pole dancer example from the [Learn You A Haskell](http://learnyouahaskell.com/) book.
 
-## Installation
-
-If [available in Hex](https://hex.pm/docs/publish), the package can be installed
-by adding `ex_pole_dancer` to your list of dependencies in `mix.exs`:
-
-```elixir
-def deps do
-  [
-    {:ex_pole_dancer, "~> 0.1.0"}
-  ]
-end
-```
-
-Documentation can be generated with [ExDoc](https://github.com/elixir-lang/ex_doc)
-and published on [HexDocs](https://hexdocs.pm). Once published, the docs can
-be found at [https://hexdocs.pm/ex_pole_dancer](https://hexdocs.pm/ex_pole_dancer).
-
+> Pierre has decided to take a break from his job at the fish farm and try
+> tightrope walking. He's not that bad at it, but he does have one problem:
+> birds keep landing on his balancing pole! They come and they take a short
+> rest, chat with their avian friends and then take off in search of
+> breadcrumbs. This wouldn't bother him so much if the number of birds on the
+> left side of the pole was always equal to the number of birds on the right
+> side. But sometimes, all the birds decide that they like one side better and
+> so they throw him off balance, which results in an embarrassing tumble for
+> Pierre (he's using a safety net).
+> 
+> Let's say that he keeps his balance if the number of birds on the left side
+> of the pole and on the right side of the pole is within three. So if there's
+> one bird on the right side and four birds on the left side, he's okay. But if
+> a fifth bird lands on the left side, then he loses his balance and takes a
+> dive.
+> 
+> We're going to simulate birds landing on and flying away from the pole and
+> see if Pierre is still at it after a certain number of birdy arrivals and
+> departures. For instance, we want to see what happens to Pierre if first one
+> bird arrives on the left side, then four birds occupy the right side and then
+> the bird that was on the left side decides to fly away.
+> 
+> We can represent the pole with a simple pair of integers. The first component
+> will signify the number of birds on the left side and the second component
+> the number of birds on the right side:
