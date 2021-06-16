@@ -24,7 +24,6 @@ defmodule AlgaesMaybeMonad do
     >>> fn x -> land_left(2, x) end
     >>> fn x -> land_right(2, x) end
   end
-
   # => %Maybe.Just{just: {2, 4}}
 
   def example2 do
@@ -34,6 +33,6 @@ defmodule AlgaesMaybeMonad do
     >>> fn x -> land_left(-1, x) end
     >>> fn x -> land_right(-2, x) end
   end
-
   # => %Maybe.Nothing{}
+
 end

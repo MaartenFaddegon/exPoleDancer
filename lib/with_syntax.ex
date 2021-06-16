@@ -24,7 +24,6 @@ defmodule WithSyntax do
       error -> error
     end
   end
-
   # => {:ok, {2, 4}}
 
   def example2 do
@@ -37,6 +36,6 @@ defmodule WithSyntax do
       error -> error
     end
   end
-
   # => {:error, :lost_balance}
+
 end

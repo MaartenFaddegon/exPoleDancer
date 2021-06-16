@@ -27,7 +27,6 @@ defmodule ExceptionalsErrorMonad do
     ~> (fn x -> land_left(2, x) end).()
     ~> (fn x -> land_right(2, x) end).()
   end
-
   # => {2, 4}
 
   def example2 do
@@ -37,6 +36,6 @@ defmodule ExceptionalsErrorMonad do
     ~> (fn x -> land_left(-1, x) end).()
     ~> (fn x -> land_right(-2, x) end).()
   end
-
   # => %MyException{reason: :lost_balance}
+
 end
