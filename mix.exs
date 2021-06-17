@@ -22,7 +22,8 @@ defmodule ExPoleDancer.MixProject do
   defp deps do
     [
       {:algae, "~> 1.2"},
-      {:exceptional, "~> 2.1"}
+      {:exceptional, "~> 2.1"},
+      {:ok, "~> 2.3.0"},
     ]
   end
 end

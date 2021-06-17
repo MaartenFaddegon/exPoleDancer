@@ -26,6 +26,11 @@ libraries.
 [exceptional](https://hexdocs.pm/exceptional/readme.html)
 library.
 
+
+`lib/ok_result_monad.ex` implements the pole dancer example with the Result monad inspired
+[ok](https://hexdocs.pm/ok/readme.html)
+library.
+
 ## Example Description
 
 The following text describes the example that is implemented by the modules in
